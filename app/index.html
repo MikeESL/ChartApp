@@ -29,19 +29,70 @@
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <!-- <li class="active"><a href="#">Home</a></li> -->
+                    <!-- <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li> -->
                 </ul>
-                <h3 class="text-muted">ChartApp</h3>
+                <h3 class="text-muted">StockGlimpse 1.0</h3>
             </div>
+                <div class="row">
 
-            <canvas id="buyers" width="600" height="400">
+                    <div class="col-lg-4 ticker">
+
+                            <p>Enter your stock's ticker symbol</p>
+
+                            <form action="" id="tickerForm">
+                                
+                                <input type="text" placeholder="ticker goes here!" class="tickerInput">
+
+                                <button type="submit" class="tickerBtn btn">Submit</button>
+
+                            </form>
+
+
+
+                    
+
+
+                    </div>
+                    <div class="col-lg-4 startDate">
+
+                            <p>Enter the date you would like to <strong>begin</strong> tracking your stock</p>
+
+                            <form action="" id="beginForm">
+                                
+                                <input type="text" placeholder="yyyy-mm-dd format" class="beginInput">
+
+                                <button type="submit" class="beginBtn btn">Submit</button>
+
+                            </form>
+                    
+
+
+                    </div>
+                    <div class="col-lg-4 endDate">
+
+                            <p>Enter the date you would like to <strong>end</strong> tracking your stock</p>
+                            <form action="" id="endForm">
+                                
+                                <input type="text" placeholder="yyyy-mm-dd format" class="endInput">
+
+                                <button type="submit" class="endBtn btn">Submit</button>
+
+                            </form>
+                 </div>   
+            
+
+
+                </div>
+            
+
+            <canvas id="lineChart" width="600" height="400">
                 
             </canvas>
 
             <div class="footer">
-                <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+                <p>thank you for app-ing</p>
             </div>
 
         </div>
