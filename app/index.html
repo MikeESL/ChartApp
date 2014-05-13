@@ -24,7 +24,26 @@
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+<div class="tickerList">
+<datalist id="commonTickers">
+    <option value="AAPL">
+    <option value="AKRX">
+    <option value="ASMI">
+    <option value="BSAC">
+    <option value="BXE">
+    <option value="CSH">
+    <option value="DIS">   
+    <option value="DLR">
+    <option value="EDU">
+    <option value="GT">
+    <option value="GOOG">     
+    <option value="HCLP">
+    <option value="IDTI">
+    <option value="IBM">    
+    <option value="SBUX">
+    
+</datalist>
+<div>
 
         <div class="container">
             <div class="header">
@@ -37,11 +56,11 @@
 
                                 
 
-                                        <p class="instruct">Enter your stock's ticker symbol (<a href="http://www.marketwatch.com/tools/quotes/lookup.asp"> or find it here </a>), and then choose the dates you would like to graph your stock's quotes</p>
+                                        <p class="instruct">Enter your stock's ticker symbol, and then choose the dates you would like to graph your stock's quotes. If you're not sure of the ticker symbol, and it's not included in the menu, look for it <a href="http://eoddata.com/stocklist/NYSE/S.htm">by clicking here</a>.</p>
 
                                       <form action="" id="stockDataForm">
                                             
-                                            <input type="text" id="tickerInput" class="tickerRequired" placeholder="ticker symbol"/>
+                                            <input type="text" id="tickerInput" class="tickerRequired" placeholder="ticker symbol" name="commonTickers" list="commonTickers"/>
 
 
                                             <input type="text" id="beginInput" class="dateInput" placeholder="From date"/>

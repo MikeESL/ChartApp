@@ -36,7 +36,8 @@ $("#stockDataForm").submit(function(e){
 									fillColor: "#6db33f",
 									strokecolor: "#ACC26D",
 									pointColor: "#fff",
-									pointStrokeColor: "#34302d", 
+									pointStrokeColor: "#34302d",
+									pointDot: false,
 									data: dataPointsArr 
 			}]};
 			

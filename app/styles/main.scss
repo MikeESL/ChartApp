@@ -94,17 +94,20 @@ body {
 /*my styles*/
 
 .header{
+    min-height: 100px;
     background: #34302d;
     border-radius: 10px;
     padding-top: 12px;
     padding-left: 15px;
+    margin-left: 22px;
+    margin-bottom: 5px;
 
 }
 .text-muted{
     color: #6db33f;
 }
 .slogan{
-    font-size: 19px;
+    font-size: 17px;
     font-style: italic;
 }
 .topRow{
@@ -129,11 +132,41 @@ body {
     color: #6db33f
 
 }
+.commonTickers{
+    overflow-y: auto;
+}
 
 canvas{
     margin-top: 35px;
+    margin-left: 50px;
 }
 
+/*style jquery datepicker*/
+.ui-datepicker-header a{
+    text-decoration: none;
+
+}
+.ui-datepicker-header{
+    background-color: #34302d;
+    border-radius: 4px;
+    padding: 1px;
+
+}
+.ui-icon{
+    color:#6db33f;
+}
+.ui-icon-circle-triangle-e{
+    float: right;
+}
+.ui-datepicker-title{
+    text-align: center;
+}
+.ui-datepicker-month{
+    color: #6db33f;
+}
+.tickerList{
+    overflow-y: auto;
+}
 
 
 
