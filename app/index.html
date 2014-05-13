@@ -28,45 +28,43 @@
 
         <div class="container">
             <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <!-- <li class="active"><a href="#">Home</a></li> -->
-                    <!-- <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li> -->
-                </ul>
-                <h3 class="text-muted">StockGlimpse 1.0<span><h6>powered by Yahoo Finance</h6></span></h3>
+                
+                <h3 class="text-muted">StockGlimpse 1.0<span><p class="slogan">invest wisely</p></span></h3>
             </div>
-            <div class="row span-12">
 
-                    <div class="stockMarket">
+                <div class="container">
+                        <div class="row topRow">
 
-                            <p>Enter your stock's ticker symbol, and choose the dates you would like to graph your stock's quotes</p>
-
-                          <form action="" id="stockDataForm">
                                 
-                                <input type="text" id="tickerInput" class="tickerRequired" placeholder="ticker symbol"/>
+
+                                        <p class="instruct">Enter your stock's ticker symbol (<a href="http://www.marketwatch.com/tools/quotes/lookup.asp"> or find it here </a>), and then choose the dates you would like to graph your stock's quotes</p>
+
+                                      <form action="" id="stockDataForm">
+                                            
+                                            <input type="text" id="tickerInput" class="tickerRequired" placeholder="ticker symbol"/>
 
 
-                                <input type="text" id="beginInput" class="dateInput" placeholder="From date"/>
+                                            <input type="text" id="beginInput" class="dateInput" placeholder="From date"/>
 
 
-                                <input type="text" id="endInput" class="dateInput" placeholder="To date">
+                                            <input type="text" id="endInput" class="dateInput" placeholder="To date">
 
-                                <button type="submit" class="tickerBtn btn">Submit</button>
-                         </form>
+                                            <button type="submit" class="tickerBtn btn">Submit</button>
+                                     </form>
 
-                    </div>
-                    
-            </div>
-            <div class="getResults">
-            </div>
 
+                        </div>
+            
             
 <!-- build line graph with Chart.js -->
-            
+                        <div class="row bottomRow">
 
-            <canvas id="lineChart" width="600" height="400">
-                
-            </canvas>
+                                <canvas id="lineChart" width="600" height="400">
+                        
+                                </canvas>
+                        </div>
+                </div>
+
 
 
 <!-- end line graph -->
@@ -114,8 +112,6 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
-        <script src="scripts/stockArray.js"></script>
-        <script src="scripts/stockArray2.js"></script>
         <script src="scripts/jquery-ui-1.10.4.custom.min.js"></script>
         <script src="scripts/Chart.min.js"></script>
 

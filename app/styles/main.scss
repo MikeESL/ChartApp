@@ -92,21 +92,48 @@ body {
     }
 }
 /*my styles*/
-// .buyers {
-//     width: 600px;
-//     height: 400px;
-// //var buyers = document.getElementById('buyers').getContext('2d');
-// }
 
-.container{
-    display: inline-block;
-}
-.ticker, .startDate, .endDate{
-    border: 1px solid black;
+.header{
+    background: #34302d;
     border-radius: 10px;
-    margin-right: 10px;
-    padding:5px;
+    padding-top: 12px;
+    padding-left: 15px;
+
 }
+.text-muted{
+    color: #6db33f;
+}
+.slogan{
+    font-size: 19px;
+    font-style: italic;
+}
+.topRow{
+    min-height: 100px;
+    background-color: #6db33f;
+    border-radius: 10px;
+    padding: 13px;
+
+}
+.instruct{
+    color: #34302d;
+    font-weight: 600;
+}
+.instruct a{
+    color: #34302d;
+}
+.instruct a:hover{
+    color: #fff;
+}
+.btn{
+    background-color:#34302d;
+    color: #6db33f
+
+}
+
+canvas{
+    margin-top: 35px;
+}
+
 
 
 

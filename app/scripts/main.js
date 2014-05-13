@@ -30,15 +30,15 @@ $("#stockDataForm").submit(function(e){
 						dataPointsArr.unshift(quote.Close);
 
 
-					var stockData = {};
-					stockData.labels = xaxisArr;
-					stockData.datasets = [{
-							fillColor: "rgba(200,194,132,0.4)",
-							strokecolor: "#ACC26D",
-							pointColor: "#fff",
-							pointStrokeColor: "#9DB86D", 
-							data: dataPointsArr 
-			}]; 
+					var stockData = {
+						labels: xaxisArr,
+						datasets: [{
+									fillColor: "#6db33f",
+									strokecolor: "#ACC26D",
+									pointColor: "#fff",
+									pointStrokeColor: "#34302d", 
+									data: dataPointsArr 
+			}]};
 			
 
 			var ctx = $("#lineChart")[0].getContext('2d');
