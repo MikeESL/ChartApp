@@ -5,7 +5,7 @@ $(document).ready(function(){
 		$(".dateInput").datepicker({dateFormat:'yy-mm-dd'});
 
 // end datePicker -------------------------------------//
-// Input & Graph Build Event ------------------------------------- //
+// Input & Graph Build ------------------------------------- //
 $("#stockDataForm").submit(function(e){
 				e.preventDefault();
 				var tickerData = $("#tickerInput").val();
@@ -37,7 +37,6 @@ $("#stockDataForm").submit(function(e){
 									strokecolor: "#ACC26D",
 									pointColor: "#fff",
 									pointStrokeColor: "#34302d",
-									pointDot: false,
 									data: dataPointsArr 
 			}]};
 			
